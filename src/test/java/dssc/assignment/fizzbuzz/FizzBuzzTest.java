@@ -16,4 +16,10 @@ public class FizzBuzzTest {
         // Assert
         assertEquals("1", actual);
     }
+
+    @Test
+    void fourIsFour() {
+
+        assertEquals("4", new FizzBuzz().convert(4));
+    }
 }
