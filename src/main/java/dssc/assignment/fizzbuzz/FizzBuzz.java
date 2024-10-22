@@ -7,9 +7,7 @@ public class FizzBuzz {
     }
 
     public String convert(int i) {
-        if (i== 4){
-            return "4";
-        }
-        return "1";
+
+        return String.valueOf(i);
     }
 }
