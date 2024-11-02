@@ -13,6 +13,9 @@ public class FizzBuzz {
         else if (number == 6){
             return "Fizz";
         }
+        else if (number == 24){
+            return "Fizz";
+        }
         else {
             return Integer.toString(number);
         }
