@@ -18,7 +18,7 @@ public class Convert {
 
     @ParameterizedTest
     @ValueSource(ints =  {3, 6, 24} )
-    void number_divisible_by_three_to_Fizz(int number) {
+    void multiples_of_three_to_Fizz(int number) {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Fizz", fizzBuzz.convert(number));
     }
