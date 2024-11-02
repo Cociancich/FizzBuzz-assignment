@@ -6,8 +6,9 @@ public class FizzBuzz {
         
     }
 
-    public String convert(int i) {
+    public String convert(int number) {
 
-        return String.valueOf(i);
+            return Integer.toString(number);
+        //return String.valueOf(i);
     }
 }
