@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Convert {
 
     @ParameterizedTest
-    @CsvSource({"1, 1", "2, 2", "40, 40"})
+    @CsvSource({"1, 1", "2, 2", "41, 41"})
     void numbers_not_divisible_by_3_or_5_to_strings(int number, String expected) {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(expected, fizzBuzz.convert(number));
@@ -21,5 +21,12 @@ public class Convert {
     void multiples_of_three_to_Fizz(int number) {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Fizz", fizzBuzz.convert(number));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints =  {5, 10, 100} )
+    void multiples_of_five_to_Fizz(int number) {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzBuzz.convert(number));
     }
 }
